@@ -1,0 +1,176 @@
+html, body {
+  margin: auto;
+  padding: 0;
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: auto;
+}
+
+
+h1{
+  font-family: "Bungee Shade", sans-serif;
+  font-size: 6em;
+  line-height: 40%;
+  color: rgb(255, 6, 122);
+
+}
+h1.button{
+  font-family: "Bungee Shade", sans-serif;
+  font-size: 6em;
+  line-height: 40%;
+  color: rgb(255, 6, 122);
+
+}
+img.image1{
+  float: left;
+  width: 200px;
+  height: 300px;
+}
+
+
+h1.mash {
+
+  font-family: "Bungee Shade", sans-serif;
+  font-size: 6em;
+  line-height: 40%;
+  color: rgb(0, 255, 81);
+
+}
+
+h1.name {
+font-size: 6em;
+font-family: "Teko", sans-serif;
+
+}
+h2{
+  font-family: "Londrina Outline", sans-serif;
+  font-size: 2em;
+  line-height: 40%;
+  color: rgb(255, 63, 143);
+
+
+}
+
+
+
+p {
+  font-family: "Teko", sans-serif;
+  line-height: 2;
+  font-weight: 10;
+margin-left: 100px;
+margin-right: 100px;
+font-size: 1.5em;
+line-height: 35px;
+
+}
+
+p.names {
+  font-family: "Teko", sans-serif;
+  font-size: 1.2em;
+  color: rgb(251, 255, 218);
+
+
+}
+nav ul {
+  list-style-type: none; /* remove bullets */
+  margin: 0;
+  padding: 14px;
+  background-color: rgb(110, 255, 102);  
+}
+
+nav li {
+  display: inline; /* change li from block level element to inline */
+  
+  font-family: "Teko", sans-serif;
+  font-size: 1.2em;
+     
+}
+nav a:link, nav a:visited {
+  color: black;
+  background-color: rgb(227, 179, 201);
+  border-radius: 3px; /*round the corners on the nav items*/
+  text-decoration: none; /*remove default underlines from links*/
+  padding: 2px 9px;
+  margin: 0;
+  font-size: 0.9em;
+  border: 1px solid white;
+
+}
+nav a:hover {	
+background-color: black;
+color: rgb(13, 225, 13);
+
+
+}
+/* change color of the link to the current page to tell the user what page they are on   */
+
+nav a.current { 
+background-color: rgb(207, 19, 88);
+color: white;
+  }
+
+
+p.controlsp1 {
+
+  font-family: "Pixelify Sans", sans-serif;
+  line-height: 2;
+margin-left: 200px;
+margin-right: 200px;
+font-weight: bold;
+color: rgb(15, 255, 103);
+font-size: 1.3em;
+}
+
+/* div.project {
+width: 50px;
+padding: 10px;
+  border: 5px solid rgb(255, 5, 109);
+  margin: 0;
+} */
+
+
+div.text-box {
+
+  width: 46%;
+  padding: 10px;
+  border: 5px solid rgb(255, 5, 109);
+  margin: 0;
+ }
+ div.text-box {
+
+  width: 80%;
+  padding: 10px;
+  border: 5px solid rgb(255, 5, 109);
+  
+  margin: auto;
+  margin-top: -85px;
+ }
+ .rule-right {
+  padding: 0 20px;
+      border-right: 1px solid;
+      color: rgb (227,266,255);
+      margin-top: 10px;
+  
+  
+  }
+  .rule-top {
+    border-top: 1px solid;
+    margin-top: 10px;
+    padding-top: 10px;
+    color: rgb(151, 184, 153); 
+}
+
+ div.text-box2 {
+  width: 50%;
+  padding: 10px;
+  border: 5px solid rgb(9, 255, 46);
+  margin-top: -125px;
+  float: right;
+
+ }
+canvas {
+  display: block;
+  margin: auto;
+  margin-bottom: 100px;
+}
