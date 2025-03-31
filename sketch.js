@@ -231,44 +231,36 @@ function lightUpRandomButton() {
 // Function to handle button clicks for player 1
 function handleClickPlayer1() {
   if (litButtonIndex !== -1 && activeButtonIndexPlayer1 === litButtonIndex) {
-    // User hit the lit up button for player 1
-    scorePlayer1++; // Increase player 1 score
-    
- // Player one sound plays if arrow key matches lit up button   
-  if (keyCode === UP_ARROW && litButtonIndex === 0 ) {
-    p1UD.play();
-  } else if (keyCode === DOWN_ARROW && litButtonIndex === 1 ) {
-    p1UD.play();
-  } else if (keyCode === LEFT_ARROW && litButtonIndex === 2 ) {
-    p1LR.play();
-  } else if (keyCode === RIGHT_ARROW && litButtonIndex === 3) {
-     p1LR.play();
-  } 
-   
-    lightUpRandomButton(); // Light up another random button
+    scorePlayer1++;
+    if (keyCode === 87 && litButtonIndex === 0 ) {
+      p1UD.play();
+    } else if (keyCode === 83 && litButtonIndex === 1 ) {
+      p1UD.play();
+    } else if (keyCode === 65 && litButtonIndex === 2 ) {
+      p1LR.play();
+    } else if (keyCode === 68 && litButtonIndex === 3) {
+      p1LR.play();
+    } 
+    lightUpRandomButton();
   }
 }
-
  
   
 
 // Function to handle button clicks for player 2
 function handleClickPlayer2() {
   if (litButtonIndex !== -1 && activeButtonIndexPlayer2 === litButtonIndex) {
-    // User hit the lit up button for player 2
-    scorePlayer2++; // Increase player 2 score
-    
-    // Player two sound plays if arrow key matches lit up button 
- if (keyCode === 87 && litButtonIndex === 0 ) {
-    p2UD.play();
-  } else if (keyCode === 83 && litButtonIndex === 1 ) {
-    p2UD.play();
-  } else if (keyCode === 65 && litButtonIndex === 2 ) {
-    p2LR.play();
-  } else if (keyCode === 68 && litButtonIndex === 3)
-    p2LR.play();    
-
-    lightUpRandomButton(); // Light up another random button
+    scorePlayer2++;
+    if (keyCode === UP_ARROW && litButtonIndex === 0 ) {
+      p2UD.play();
+    } else if (keyCode === DOWN_ARROW && litButtonIndex === 1 ) {
+      p2UD.play();
+    } else if (keyCode === LEFT_ARROW && litButtonIndex === 2 ) {
+      p2LR.play();
+    } else if (keyCode === RIGHT_ARROW && litButtonIndex === 3) {
+      p2LR.play();
+    }
+    lightUpRandomButton();
   }
 }
 
@@ -293,31 +285,33 @@ function keyReleased() {
 
 
 function keyPressed() {
-  if (keyCode === UP_ARROW) {
+  if (keyCode === 87) {
     activeButtonIndexPlayer1 = 0;
     handleClickPlayer1();
-  } else if (keyCode === DOWN_ARROW) {
+  } else if (keyCode === 83) {
     activeButtonIndexPlayer1 = 1;
     handleClickPlayer1();
-  } else if (keyCode === LEFT_ARROW) {
+  } else if (keyCode === 65) {
     activeButtonIndexPlayer1 = 2;
     handleClickPlayer1();
-  } else if (keyCode === RIGHT_ARROW) {
+  } else if (keyCode === 68) {
     activeButtonIndexPlayer1 = 3;
     handleClickPlayer1();
-  } else if (keyCode === 87) {
-    activeButtonIndexPlayer2 = 0; // W for player 2's UP button
+  } else if (keyCode === UP_ARROW) {
+    activeButtonIndexPlayer2 = 0;
     handleClickPlayer2();
-  } else if (keyCode === 83) {
-    activeButtonIndexPlayer2 = 1; // S for player 2's DOWN button
+  } else if (keyCode === DOWN_ARROW) {
+    activeButtonIndexPlayer2 = 1;
     handleClickPlayer2();
-  } else if (keyCode === 65) {
-    activeButtonIndexPlayer2 = 2; // A for player 2's LEFT button
+  } else if (keyCode === LEFT_ARROW) {
+    activeButtonIndexPlayer2 = 2;
     handleClickPlayer2();
-  } else if (keyCode === 68) {
-    activeButtonIndexPlayer2 = 3; // D for player 2's RIGHT button
+  } else if (keyCode === RIGHT_ARROW) {
+    activeButtonIndexPlayer2 = 3;
     handleClickPlayer2();
   }
+}
+
   
   
   //Code for buzzer if wrong key is pressed
@@ -326,7 +320,6 @@ function keyPressed() {
   // } 
 
     
-}
   
   
 
